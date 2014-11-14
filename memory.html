@@ -1,19 +1,36 @@
 <html>
 <head>
 <style>
+<section>
+position: absolute
   height: 170px;
   width: 100px;
   border: 2px solid yellow;
   background-color: green;
-  
+  </section>
+  .? {
+    background-color: red;
+  }
+  .= {
+    background-color: purple;
+    z-index: -1;
+  }
+  nav:hover .? {
+    display: none;
+  }
+  nav {
+    position:relative;
+  }
 </style>
 </head>
 <body>
-<section>
+  <nav></body>
+<section class="?">
 <p>CJ is? </p>
-</section>
+</section class="=">
 <section>
 <p> a bitch </p>
 </section>
+</nav>
 </body>
 </html>
