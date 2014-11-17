@@ -8,39 +8,41 @@ position: absolute
   border: 2px solid yellow;
   background-color: green;
 }
-  .? {
+  .question {
     background-color: red;
   }
-  .= {
+  .answer= {
     background-color: purple;
     z-index: -1;
   }
+  nav: hover .answer {
+    display: none;
+  }
   nav {
     position:relative;
-    display: hover;
   }
 </style>
 </head>
 <body>
   <nav>
-<section class="?">
+<section class="question">
 <p>my favorite color is? </p>
 </section>
-<section class="=">
+<section class="answer">
 <p> blue </p>
 </section>
-<section class="?">
+<section class="question">
   <p>where do i live?</p>
 </section>
-<section class="=">
+<section class="answer">
   <p>brandt</p>
 </section>
-<section class="?">
+<section class="question">
   <p>
     what time is this class
   </p>
   </section>
-  <section>
+  <section class="answer">
   <p>
     2:45
   </p>
