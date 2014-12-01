@@ -41,8 +41,21 @@ section {
 </style>
 </head>
 <body>
+<script type="text/javascript">
+counter= 0
+updateCounter=function(cbId)
+theCheckbox= document.querySelector('#'+cbId)
+if (theCheckbox.checked) {
+  counter= counter+ 1
+} else{
+  counter= counter -1
+}
+countSpot= document.querySelector('#myCounter');
+countSpot.innerHTML="correct" + counter;
+
+</script>
   <nav>
-  <input type="checkbox">
+  <input id= "cb1" type="checkbox" onClick="updateCounter(cb1)">
   <section class="answer">
 <p> blue </p>
 </section>
@@ -51,7 +64,7 @@ section {
 </section>
 </nav>
 <nav>
-<input type="checkbox">
+<input id="cb2" type="checkbox" onClick="updateCounter(cb2)">
 <section class="answer">
   <p>brandt</p>
 </section>
@@ -60,7 +73,7 @@ section {
 </section>
 </nav>
 <nav>
-<input type="checkbox">
+<input id="cb3" type="checkbox" onClick="updateCounter(cb3)">
 <section class="answer">
   <p>2:45</p>
 </section>
