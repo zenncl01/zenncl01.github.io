@@ -1,16 +1,17 @@
 <button onclick="save item ()">save</button><input type="text" value="" size="40">
-<ul id="groceries"></ul>
 <script type= "text/javascript">
   saveitem= function(){
-    document.createElement("li")
-    ul = document.querySelector("groceries")
-    ul.appendChild(li)
+    myUL = document.querySelector("grocerylist");
+    myTextbox = document.querySelector("grocerybox");
+    myLi = document.querySelector('li');
+    myGrocery = document.createTextNode(myTextbox.value);
+    myLi.appendChild(myGrocery);
+    myUL.appendChild(li);
+    myTextbox.value = "";
   }
 </script>
 <body>
-  <title>groceries</title>
   <ul>
-    <li>item</li>
   </ul>
 </body>
 
