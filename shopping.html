@@ -2,7 +2,18 @@
 <ul id="groceries"></ul>
 <script type= "text/javascript">
   saveitem= function(){
-    li = document.querySelector("groceries")
+    ul = document.querySelector("groceries")
+    ul.appendChild(li)
+    <label for="redi">Red:</label>
+     <input type="range" min=0 max=255 id="redi" onmousemove="changeColor()"
+           onmouseup="showValues()" value="125" /> <span id="redv"></span><br>
+     <label for="greeni">Green:</label>
+     <input type="range" min=0 max=255 id="greeni" onmousemove="changeColor()"
+           onmouseup="showValues()" value="125" /><span id="greenv"></span><br>
+     <label for="bluei">Blue:</label>
+     <input type="range" min=0 max=255 id="bluei" onmousemove="changeColor()"
+           onmouseup="showValues()" value="200" /><span id="bluev"></span>
+
   }
 </script>
 
