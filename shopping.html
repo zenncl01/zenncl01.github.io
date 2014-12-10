@@ -4,16 +4,15 @@
     myUL = document.querySelector("grocerylist");
     myTextbox = document.querySelector("grocerybox");
     listLi=document.createElement("li")
-    myLi = document.querySelector('li');
     myGrocery = document.createTextNode(myTextbox.value);
-    myLi.appendChild(myGrocery);
+    listLi.appendChild(myGrocery);
     myUL.appendChild(li);
     myTextbox.value
   }
 </script>
 <body>
-<ul></ul>
-  <button onclick="save()">save</button><input type="text" value="" size="40">
+<ul id="grocerylist"></ul>
+  <button onclick="save()">save</button><input type="text" id="grocerybox" value="" size="40">
 </body>
 </html>
 
