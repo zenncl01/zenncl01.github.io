@@ -4,10 +4,10 @@
     myUL = document.querySelector("grocerylist");
     myTextbox = document.querySelector("grocerybox");
     listLi=document.createElement("li")
-    myGrocery = document.createTextNode('myTextbox');
+    myGrocery = document.createTextNode(myTextbox.value);
     listLi.appendChild(myGrocery);
     myUL.appendChild(li);
-    myTextbox.value
+    myTextbox.value="save"
   }
 </script>
 <body>
